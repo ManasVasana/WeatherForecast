@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Inner box which contains all elements -->
+<div class="weatherbox">    
+    <h1>Weather Forecast</h1>
+    <input type="text" placeholder="Enter city name" id="city"/>
+    <br>
+    <button type="button" id="search">Search</button>
+    <p class="error"></p>
+    <!-- Details of weather regarding temperature,weather description -->
+    <div class="weather_details">
+        <img id="weathericon">
+        <div id="temperature"></div>
+        <div id="minmaxtemp"></div>
+        <div id="weatherinfo"></div>
+        <div id="cityname"></div>
+        <!-- Details of weather regarding humidity,wind speed -->
+        <div class="details">
+            <!-- Humidity details -->
+            <div class="detailing">
+                <img class="images" src="humidity.png">
+                <div>
+                    <p id="humidity"></p>
+                    <p class="text">Humidity</p>
+                </div>
+            </div>
+            <!-- Wind details -->
+            <div class="detailing">
+                <img class="image" src="wind.png">
+                <div>
+                    <p id="wind"></p>
+                    <p class="text1"> Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="code.js"></script>
+</body>
+</html>
